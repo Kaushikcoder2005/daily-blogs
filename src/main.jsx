@@ -7,6 +7,8 @@ import Router from './Router.jsx'
 import HomePage from './Components/Home.jsx'
 import Post from './Components/Post.jsx'
 import ContextProvider from './Context/Context.jsx'
+import About from './Components/About.jsx'
+import ContactPage from './Components/Contact.jsx'
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +16,8 @@ const routes = createBrowserRouter(
       <Route path='/' element={<HomePage/>}/>
       <Route path='/blog' element={<App/>}/>
       <Route path='/post' element={<Post/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<ContactPage/>}/>
     </Route>
   )
 )
